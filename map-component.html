@@ -1,5 +1,5 @@
 <!-- Component Definition -->
-  <polymer-element name="composer-map" attributes="webMapId, basemap, extent">
+  <polymer-element name="esri-map" attributes="webMapId, basemap, extent">
     <template>
       <!--doesn't work because of CORS <link rel="stylesheet" href="http://js.arcgis.com/3.8/js/esri/css/esri.css"> -->
       <!--doesn't work because of apparent polymer bug <style>
@@ -21,10 +21,10 @@
       <div id="map"></div>
     </template>
 
-    <script src="http://js.arcgis.com/3.8/"></script>
+    <!-- <script src="http://js.arcgis.com/3.8/"></script> -->
 
     <script>
-      Polymer('composer-map', {
+      Polymer('esri-map', {
         basemap: 'streets',
         webMapId: '',
         extent: '-125,25,-65,50',
